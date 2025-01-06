@@ -1,39 +1,60 @@
-# search-pokemon
+# Search Pokémon
 
-This template should help get you started developing with Vue 3 in Vite.
+**Search Pokémon** es una aplicación web construida con **Vue 3** que consume la API pública de Pokémon para buscar información sobre diferentes Pokémon. La app utiliza dos endpoints principales de la API de Pokémon para obtener una lista de Pokémon y detalles específicos de cada uno.
 
-## Recommended IDE Setup
+## Tecnologías
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Vue 3** - Framework para construir la interfaz de usuario.
+- **Pinia** - Estado centralizado para gestionar los datos.
+- **Vite** - Herramienta de construcción para un desarrollo rápido.
+- **Tailwind CSS** - Framework de CSS para un diseño rápido y responsivo.
+- **Axios** - Cliente HTTP para interactuar con la API de Pokémon.
+- **Vitest** - Framework de pruebas para asegurar la calidad del código.
 
-## Type Support for `.vue` Imports in TS
+## Funcionalidades
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+### Buscar Pokémon
 
-## Customize configuration
+Puedes ver una lista de Pokémon utilizando el siguiente endpoint:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- `GET https://pokeapi.co/api/v2/pokemon`
 
-## Project Setup
+Este endpoint devuelve una lista de Pokémon, de la cual podrás buscar por nombre.
 
-```sh
-npm install
-```
+### Información específica de un Pokémon
 
-### Compile and Hot-Reload for Development
+Para obtener información detallada de un Pokémon específico, utiliza el siguiente endpoint:
 
-```sh
+- `GET https://pokeapi.co/api/v2/pokemon/${name}`
+
+Sustituye `${name}` por el nombre del Pokémon para obtener sus detalles, como habilidades, estadísticas, y tipos.
+
+## Instalación
+
+### Clonar el repositorio
+
+git clone https://github.com/tu_usuario/search-pokemon.git
+
+## Instalar Dependencias
+
 npm run dev
-```
 
-### Type-Check, Compile and Minify for Production
+## Ejecutar la aplicación en modo desarrollo
 
-```sh
-npm run build
-```
+npm run dev
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+## Esctructura del Proyecto:
 
-```sh
-npm run test:unit
-```
+search-pokemon/
+├── src/
+│   ├── assets/           # Archivos estáticos (imágenes, íconos, etc.)
+│   ├── components/       # Componentes reutilizables
+│   ├── stores/           # Pinia stores
+│   ├── views/            # Vistas principales
+│   ├── App.vue           # Componente principal de Vue
+│   └── main.ts           # Archivo principal de entrada
+├── public/               # Archivos públicos
+│   └── index.html        # Archivo HTML principal
+├── package.json          # Dependencias y scripts del proyecto
+└── vite.config.ts        # Configuración de Vite
+
