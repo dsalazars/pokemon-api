@@ -37,7 +37,11 @@ git clone https://github.com/tu_usuario/search-pokemon.git
 
 ## Instalar Dependencias
 
+```bash
+
 npm run dev
+
+```
 
 ## Ejecutar la aplicación en modo desarrollo
 
@@ -45,3 +49,20 @@ npm run dev
 
 ```bash
 git clone https://github.com/tu_usuario/search-pokemon.git
+```
+## Esctructura del proyecto:
+
+![image](https://github.com/user-attachments/assets/d4cc1403-0cc6-46f9-abaa-cfaf03935e46)
+
+
+## Capturas de pantalla:
+
+
+![pokemonapp](https://github.com/user-attachments/assets/d1d716e7-91f7-4694-aa1d-bfdf96ae8943)
+
+
+Gracias por usar Search Pokémon. ¡Disfruta aprendiendo sobre los Pokémon! 🐱‍👓⚡
+
+
+
+
