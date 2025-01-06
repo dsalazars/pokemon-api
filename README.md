@@ -43,18 +43,5 @@ npm run dev
 
 npm run dev
 
-## Esctructura del Proyecto:
-
-search-pokemon/
-├── src/
-│   ├── assets/           # Archivos estáticos (imágenes, íconos, etc.)
-│   ├── components/       # Componentes reutilizables
-│   ├── stores/           # Pinia stores
-│   ├── views/            # Vistas principales
-│   ├── App.vue           # Componente principal de Vue
-│   └── main.ts           # Archivo principal de entrada
-├── public/               # Archivos públicos
-│   └── index.html        # Archivo HTML principal
-├── package.json          # Dependencias y scripts del proyecto
-└── vite.config.ts        # Configuración de Vite
-
+```bash
+git clone https://github.com/tu_usuario/search-pokemon.git
