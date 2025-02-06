@@ -55,12 +55,12 @@ export const usePokemonStore = defineStore("pokemon", () => {
       
         if (existingIndex !== -1) {
           favoritesPokemons.value.splice(existingIndex, 1);
-         openModal.value = false;
         } else {
           const newPokemon = await getPokemon(pokemonName);
           favoritesPokemons.value.push(newPokemon);
-         openModal.value = false;
         }
+
+        openModal.value = false;
       };
       
       const copyPokemonDetails = (pokemon: Pokemon) => {
